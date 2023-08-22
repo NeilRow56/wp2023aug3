@@ -1,6 +1,10 @@
+"use client"
+
+
 import Image from "next/image"
 import Link from "next/link"
 import { datafile } from "@/data"
+
 
 const Menu = () => {
   return (
@@ -25,11 +29,23 @@ const Menu = () => {
 
       </Link>
       
+      
       </div>  
       ))} 
       </div> 
       )
       )}
+
+<Link href='/api/auth/signout' >
+      <div className="flex flex-row mt-2 space-x-3 space-y-3  hover:bg-soft-bg hover:rounded-md">
+        
+      <Image src="/images/logout-svgrepo-com.svg" alt="logo" width={40} height={40} />         
+        <span className="text-red-700 ">Sign Out</span>
+        
+    </div>
+
+      </Link>
+
      
       </div>
   )

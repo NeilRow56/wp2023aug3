@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Navbar = () => {
   return (
@@ -14,7 +15,18 @@ const Navbar = () => {
           width={25}
           height={25}
         />
-        <Image src="/images/app.svg" alt="app Icon" width={25} height={25} />
+        <Link href="/">
+          <div className="px-2 flex  items-center space-x-2 mt-4">
+            <Image
+              src="/images/app.svg"
+              alt="app Icon"
+              width={25}
+              height={25}
+            />
+            <span className=" ">Home</span>
+          </div>
+        </Link>
+
         <Image
           src="/images/expand.svg"
           alt="expand Icon"

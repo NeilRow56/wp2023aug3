@@ -4,11 +4,11 @@ import { SignUpForm } from "../components/signup-form";
 
 const SignUpPage = () => {
   return (
-    <div className="bg-blue-900 min-h-screen flex flex-col ">
-        <div className="bg-white min-w-screen flex-grow pt-16 p-4  rounded-lg m-2 ">
+    <main className="flex flex-col min-h-full justify-center py-12 sm:px-6 lg:px-8 bg-gray-100 ">
+      <div className="sm:mx-auto sm:w-full sm:max-w-md" >
       <SignUpForm  />
       </div>
-    </div>
+    </main>
   );
 };
 
